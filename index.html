@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Mijael Maratuech Seminario" />
+    <meta name="description" content="API Fun, COMP20 assignment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Fun</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="apiFun.js"></script>
+  </head>
+  <body>
+    <h1>Your word's repo of the day!</h1>
+    <p>
+      Using GitHub's repository search API, one gets access to data of all
+      GitHub repositories.
+    </p>
+    <p>
+      There's the posibility of filtering by date, number of stars, languages,
+      etc.
+    </p>
+    <p>
+      I found this API because I'm a frequent GitHub user. In this scenario, my
+      request's options filtered by date of creation and content.
+    </p>
+    <p>
+      This API can help individuals keep track of their source code. For
+      example, they can get a repo's commit or deployment history.
+    </p>
+    <p>
+      It can also be useful when researching software trends in the world of
+      Open Source, as one can sort repositories by indicators of popularity.
+    </p>
+    <p>So, without further ado...</p>
+    <ol>
+      <li>Think of a word. 🤔</li>
+      <li>Fill it in. 👀</li>
+      <li>See today's new repos containing your word! 😎</li>
+    </ol>
+    <form id="search-form">
+      <label for="input-word">Your word:</label>
+      <input type="text" id="input-word" name="input-word" />
+      <button type="button" id="search-button" onclick="search()">Go!</button>
+    </form>
+    <div id="repo-output"></div>
+  </body>
+</html>
