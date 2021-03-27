@@ -1,2 +1,2 @@
 # APIFun-COMP20
-COMP20, hw10
+Uses the GitHub Search API to find repositories containing certain terms and that were created within the last day.
