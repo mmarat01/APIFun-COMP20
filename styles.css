@@ -4,3 +4,43 @@ body {
   font-family: "Archivo", sans-serif;
   background-color: rgb(209, 209, 209);
 }
+::-moz-selection {
+  color: #000;
+  background-color: #e60000;
+}
+
+::selection {
+  color: #000;
+  background-color: #e60000;
+}
+
+#repo-output {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 
+  box shadow effect on hover from: https://codepen.io/ovdojoey/pen/BomKyZ
+*/
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #000;
+  width: 300px;
+  transition: box-shadow 0.3s;
+}
+
+.repo-card a {
+  color: #000;
+}
+
+.repo-card:hover {
+  box-shadow: 0 0 20px #21212133;
+}
+
+.repo-card a:hover {
+  color: #e60000;
+  font-weight: 600;
+}

@@ -46,9 +46,9 @@ const printResults = (repos) => {
     let repoCard = document.createElement("div");
     // build
     repoCard.className = "repo-card";
-    repoCard.innerHTML = `<p>Repo name: ${repo.name}</p><p>Description: ${repo.description}</p>`;
-    repoCard.innerHTML += `<p>Author: ${repo.owner.login}</p><p>Language: ${repo.language}`;
-    repoCard.innerHTML += `<p><a href="https://github.com/${repo.full_name}">See it here</a></p>`;
+    repoCard.innerHTML = `<p><strong>Repo name:</strong> ${repo.name}</p><p><strong>Description:</strong> ${repo.description}</p>`;
+    repoCard.innerHTML += `<p><strong>Author:</strong> ${repo.owner.login}</p><p><strong>Language:</strong>${repo.language}</p>`;
+    repoCard.innerHTML += `<p><a href="https://github.com/${repo.full_name}"><strong>See it here</strong></a></p>`;
     // attach to root
     repoOutput.appendChild(repoCard);
   });
