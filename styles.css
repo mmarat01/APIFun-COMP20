@@ -7,12 +7,12 @@ body {
 
 ::-moz-selection {
   color: #000;
-  background-color: #e60000;
+  background-color: #f74e4e;
 }
 
 ::selection {
   color: #000;
-  background-color: #e60000;
+  background-color: #f74e4e;
 }
 
 #repo-output {
@@ -29,7 +29,7 @@ body {
   margin: 1rem;
   padding: 1rem;
   border: 2px solid #000;
-  width: 300px;
+  width: 400px;
   transition: box-shadow 0.3s;
 }
 

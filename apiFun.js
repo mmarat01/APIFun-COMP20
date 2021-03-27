@@ -23,7 +23,6 @@ const getRepos = () => {
   xhr.onreadystatechange = () => {
     if (xhr.readyState == 4 && xhr.status == 200) {
       let responseJSON = JSON.parse(xhr.responseText);
-      // console.log(dataObjects.items);
       printResults(responseJSON.items);
     }
   };
@@ -36,7 +35,6 @@ const getRepos = () => {
 const printResults = (repos) => {
   let repoOutput = document.querySelector("#repo-output");
   repoOutput.innerHTML = "";
-  console.log(repos);
   if (!repos.length) {
     repoOutput.innerHTML = "<p>Sorry, no results for today :(</p>";
     return;
@@ -47,7 +45,7 @@ const printResults = (repos) => {
     // build
     repoCard.className = "repo-card";
     repoCard.innerHTML = `<p><strong>Repo name:</strong> ${repo.name}</p><p><strong>Description:</strong> ${repo.description}</p>`;
-    repoCard.innerHTML += `<p><strong>Author:</strong> ${repo.owner.login}</p><p><strong>Language:</strong>${repo.language}</p>`;
+    repoCard.innerHTML += `<p><strong>Author:</strong> ${repo.owner.login}</p><p><strong>Language</strong> ${repo.language}</p>`;
     repoCard.innerHTML += `<p><a href="https://github.com/${repo.full_name}"><strong>See it here</strong></a></p>`;
     // attach to root
     repoOutput.appendChild(repoCard);
