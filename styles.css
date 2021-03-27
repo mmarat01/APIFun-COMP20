@@ -4,6 +4,7 @@ body {
   font-family: "Archivo", sans-serif;
   background-color: rgb(209, 209, 209);
 }
+
 ::-moz-selection {
   color: #000;
   background-color: #e60000;
