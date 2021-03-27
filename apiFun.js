@@ -37,6 +37,10 @@ const printResults = (repos) => {
   let repoOutput = document.querySelector("#repo-output");
   repoOutput.innerHTML = "";
   console.log(repos);
+  if (!repos.length) {
+    repoOutput.innerHTML = "<p>Sorry, no results for today :(</p>";
+    return;
+  }
   repos.forEach((repo) => {
     // output in card shape
     let repoCard = document.createElement("div");
